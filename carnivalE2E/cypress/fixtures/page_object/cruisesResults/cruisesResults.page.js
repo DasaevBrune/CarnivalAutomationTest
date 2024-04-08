@@ -9,7 +9,8 @@ class CruisesResults {
     get aSixDayResult() {return cy.get('span[data-testid="cg-date_BA3_TPA_PA_6_Mon"]');}
     get clearFilterButton(){return cy.get('button[aria-label="Clear all Selections"] p')}
     get firstGridResult() {return cy.get('[data-testid="pricing_CT1_SYD_LM_2_Wed"] > [data-testid="pricingContainer"] > [data-testid="priceContainer"] > [data-testid="priceAmount"]')}
-
+    get showDateButton(){return cy.contains('button', 'Show 1 Date').first();}
+    get viewItineraryBtn() { return cy.contains('a', 'View Itinerary');}
 
     verifyPriceRange() {
         cy.contains('> $500').should('be.visible');

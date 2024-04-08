@@ -4,7 +4,7 @@ class HomePage {
     get theBahamasOption(){return cy.get(':nth-child(2) > .cdc-filter-button');}
     get durationOptions(){return cy.get('#cdc-durations');}
     get sixNineDaysOption(){return cy.get(':nth-child(2) > .cdc-filter-button');}
-  
+    
     closePromotionalModalIfPresent() {
       cy.document().then((document) => {
           new MutationObserver(function () {
@@ -18,6 +18,13 @@ class HomePage {
           }).observe(document.body, { childList: true, subtree: true });
       });
   }
+  makeSearch() {
+    this.sailToOptions.click();
+    this.theBahamasOption.click();
+    this.durationOptions.click();
+    this.sixNineDaysOption.click();
+    this.searchCruisesBtn.click();
+    }
     
   }
   

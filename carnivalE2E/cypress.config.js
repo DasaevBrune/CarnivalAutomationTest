@@ -6,9 +6,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    experimentalRunAllSpecs : true,
-    baseUrl: 'https://www.carnival.com/',
-    "viewportWidth": 1440,
-    "viewportHeight": 900,
+    baseUrl: "https://www.carnival.com/",
+    viewportWidth: 1440,
+    viewportHeight: 900,
   },
 });
