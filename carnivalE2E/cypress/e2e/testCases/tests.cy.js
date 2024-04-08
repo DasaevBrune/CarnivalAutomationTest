@@ -1,7 +1,7 @@
 import Homepage from "../../fixtures/page_object/homepage/homepage.page";
 import CruisesResultsPage from "../../fixtures/page_object/cruisesResults/cruisesResults.page";
 import ItineraryPage from "../../fixtures/page_object/itinerary/itinerary.page";
-import BookingPage from "../../fixtures/booking/booking.page";
+import BookingPage from "../../fixtures/page_object/booking/booking.page";
 
 describe("Searching, Filtering, and Sorting Test Cases", () => {
   before(() => {

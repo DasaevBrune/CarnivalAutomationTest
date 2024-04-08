@@ -83,4 +83,6 @@ Conclusion
 
 By automating functional and E2E tests, we ensure the reliability and correctness of the Carnival Cruise website. Regularly running these tests helps catch regressions early and maintains the quality of the application.
 
+To manage the promotional modal that appears randomly, the information in this post was used: https://stackoverflow.com/questions/72214797/how-to-work-on-random-pop-ups-in-cypress
+
 Feel free to add comments and improvements to enhance the testing suite.
